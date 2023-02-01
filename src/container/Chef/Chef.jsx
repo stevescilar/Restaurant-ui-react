@@ -21,8 +21,8 @@ const Chef = () => (
         <p className="p__opensans">The Tender, Juicy Meat Pairs Perfectly With The Crispy, Aromatic Vegetables, And The Sauce Is Like A Symphony Of Spices On The Tongue.</p>
       </div>
       <div className="app__chef-sign">
-        <p>Stephen Muambi</p>
-        <p className="p__opensans">Q & A Officer</p>
+        <p>Joseph Doe</p>
+        <p className="p__opensans">Celebrated Chef</p>
         <img src={images.sign} alt="sign" />
       </div>
     </div>
