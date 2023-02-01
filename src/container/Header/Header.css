@@ -5,11 +5,11 @@
 .app__header-h1 {
     font-family: var(--font-base);
     color: var(--color-golden);
-    font-weight: 700;
+    /* font-weight: 700; */
     letter-spacing: 0.04em;
     text-transform: capitalize;
-    line-height: 117px;
-    font-size: 90px;
+    line-height: 20px;
+    font-size: 5px;
 }
 
 .app__header-img img {
@@ -18,14 +18,15 @@
 
 @media screen and (min-width: 2000px) {
     .app__header-h1 {
-        font-size: 180px;
-        line-height: 210px;
+        font-size: 127px;
+        line-height: 130px;
     }
 }
 
 @media screen and (max-width: 1150px) {
     .app__header-h1 {
         font-size: 90px;
+        line-height: 100px;
     }
 }
 

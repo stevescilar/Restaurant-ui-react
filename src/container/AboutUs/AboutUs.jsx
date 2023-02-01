@@ -8,6 +8,30 @@ const AboutUs = () => (
     <div className="app__aboutus-overlay flex__center">
       <img src={images.G} alt="logo" />
     </div>
+
+    <div className="app__aboutus-content flex__center">
+      <div className="app_aboutus-content_about">
+        <h1 className="headtext__cormorant"> About Us</h1>
+          <img src={images.spoon} alt="" className='spoon__img' />
+          <p className="p__opensans">This is truly the epitome of delicious food, and I feel so grateful to be able to enjoy it</p>
+        
+        <button type='button' className="custom__button">See Menu</button>
+      </div>
+
+      {/* middle div */}
+      <div className="app__aboutus-content_knife flex__center">
+        <img src={images.knife} alt="knife" />
+      </div>
+
+      {/* Right side section */}
+      <div className="app_aboutus-content_history">
+        <h1 className="headtext__cormorant">Our History </h1>
+          <img src={images.spoon} alt="" className='spoon__img' />
+          <p className="p__opensans">This is truly the epitome of delicious food, and I feel so grateful to be able to enjoy it</p>
+        
+        <button type='button' className="custom__button">See Menu</button>
+      </div>
+    </div>
   </div>
 );
 
