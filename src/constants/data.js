@@ -2,17 +2,17 @@ import images from './images';
 
 const wines = [
   {
-    title: 'Chapel Hill Shiraz',
+    title: 'Tusker',
     price: '$56',
     tags: 'AU | Bottle',
   },
   {
-    title: 'Catena Malbee',
+    title: 'Kibao',
     price: '$59',
     tags: 'AU | Bottle',
   },
   {
-    title: 'La Vieillw Rose',
+    title: 'Plisner',
     price: '$44',
     tags: 'FR | 750 ml',
   },
@@ -30,7 +30,7 @@ const wines = [
 
 const cocktails = [
   {
-    title: 'Aperol Sprtiz',
+    title: 'Kaburi',
     price: '$20',
     tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
   },
@@ -40,7 +40,7 @@ const cocktails = [
     tags: 'Dark rum | Ginger beer | Slice of lime',
   },
   {
-    title: 'Daiquiri',
+    title: 'Five (5) Cousins',
     price: '$10',
     tags: 'Rum | Citrus juice | Sugar',
   },
@@ -50,7 +50,7 @@ const cocktails = [
     tags: 'Bourbon | Brown sugar | Angostura Bitters',
   },
   {
-    title: 'Negroni',
+    title: 'Cider',
     price: '$26',
     tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
   },

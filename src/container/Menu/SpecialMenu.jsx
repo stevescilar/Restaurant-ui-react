@@ -1,10 +1,48 @@
 import React from 'react';
 
+import { SubHeading, MenuItem } from '../../components';
+import {images, data } from '../../constants';
 import './SpecialMenu.css';
 
 const SpecialMenu = () => (
-  <div>
-    SpecialMenu
+  <div className="app__specialMenu flex__center section__padding" id="Menu">
+    <div className="app__specialMenu-title">
+      <SubHeading title="Prices are within your pocket limit" />
+      <h1 className="headtext__cormorant">Todays' Special</h1>
+    </div>
+
+    <div className="app__specialMenu-menu">
+
+        {/* Left side div */}
+      <div className="app__specialMenu-menu_wine flex__center">
+        <p className='app__specialMenu_menu_heading'>Wine & Beer</p>
+        <div className="app__specialMenu-menu_items">
+          {data.wines.map((wine, index) => (
+            <MenuItem key={ wine.title + index} title= {wine.title} price = {wine.price} tags={wine.tags} />
+          ) )}
+        </div>
+      </div>
+
+      {/* image div(second div) - in the middle */}
+      <div className="app__specialMenu-menu_img">
+        <img src={images.menu} alt="menuimg" />
+      </div>
+      
+      {/* third div for the right side menu */}
+      <div className="app__specialMenu-menu_cocktails flex__center">
+        <p className='app__specialMenu_menu_heading'>Cocktails</p>
+        <div className="app__specialMenu-menu_items">
+        {data.cocktails.map((cocktail, index) => (
+            <MenuItem key={ cocktail.title + index} title= {cocktail.title} price = {cocktail.price} tags={cocktail.tags} />
+          ) )}
+        </div>
+      </div>
+    </div>
+    
+    {/* last div for the entire div(call to action button) */}
+    <div style={{marginTop: '15px'}}>
+      <button type='button' className='custom__button'>View More</button>
+    </div>
   </div>
 );
 
